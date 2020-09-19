@@ -1,0 +1,13 @@
+//
+//  ConfigUAT.xcconfig
+//  AhoyTemperatureMeter
+//
+//  Created by sajeev Raj on 19/09/2020.
+//  Copyright © 2020 NewsApp. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = https:/$()/api.openweathermap.org/data/2.5
+WEATHER_API_KEY  = b00219212e5272edc3c3be6a9ae4ee97

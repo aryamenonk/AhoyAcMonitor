@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130F38F4251610320071DED3 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F38F3251610320071DED3 /* BeaconManager.swift */; };
+		130F38F7251616650071DED3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F38F6251616650071DED3 /* Alert.swift */; };
+		130F38F92516233C0071DED3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F38F82516233C0071DED3 /* StringExtension.swift */; };
+		1337EBB12515F80000E11CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337EBB02515F80000E11CF5 /* AppDelegate.swift */; };
+		1337EBB32515F80000E11CF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337EBB22515F80000E11CF5 /* SceneDelegate.swift */; };
+		1337EBB82515F80000E11CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337EBB62515F80000E11CF5 /* Main.storyboard */; };
+		1337EBBA2515F80400E11CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337EBB92515F80400E11CF5 /* Assets.xcassets */; };
+		1337EBBD2515F80400E11CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1337EBBB2515F80400E11CF5 /* LaunchScreen.storyboard */; };
+		1337EBC82515F80500E11CF5 /* AhoyTemperatureMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337EBC72515F80500E11CF5 /* AhoyTemperatureMeterTests.swift */; };
+		1337EBD32515F80500E11CF5 /* AhoyTemperatureMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337EBD22515F80500E11CF5 /* AhoyTemperatureMeterUITests.swift */; };
+		13D88835251606E600C44342 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337EBB42515F80000E11CF5 /* DashboardViewController.swift */; };
+		13D8883A2516099900C44342 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D888372516099900C44342 /* ServiceManager.swift */; };
+		13D8883B2516099900C44342 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D888382516099900C44342 /* Configuration.swift */; };
+		13D8883C2516099900C44342 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D888392516099900C44342 /* Requestable.swift */; };
+		13D8884325160AC800C44342 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D8884225160AC800C44342 /* WeatherService.swift */; };
+		13D8884525160AEE00C44342 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D8884425160AEE00C44342 /* Weather.swift */; };
+		13D8884725160BC300C44342 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D8884625160BC300C44342 /* City.swift */; };
+		13D8884B25160BFB00C44342 /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D8884A25160BFB00C44342 /* WeatherInformation.swift */; };
+		328A8B7D5BA8B590D165D583 /* Pods_AhoyTemperatureMeter_AhoyTemperatureMeterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91AF64A37BD90F11F26D0CB /* Pods_AhoyTemperatureMeter_AhoyTemperatureMeterUITests.framework */; };
+		6229FCB40C25CB87185D84CF /* Pods_AhoyTemperatureMeterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E74230EA9EAAA60FA3D6E4 /* Pods_AhoyTemperatureMeterTests.framework */; };
+		DDFEF048F5C37E568A6CBD6B /* Pods_AhoyTemperatureMeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAF83D9E79A6DD4AC5B3E22 /* Pods_AhoyTemperatureMeter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1337EBC42515F80500E11CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1337EBA52515F80000E11CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1337EBAC2515F80000E11CF5;
+			remoteInfo = AhoyTemperatureMeter;
+		};
+		1337EBCF2515F80500E11CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1337EBA52515F80000E11CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1337EBAC2515F80000E11CF5;
+			remoteInfo = AhoyTemperatureMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130F38F3251610320071DED3 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		130F38F6251616650071DED3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		130F38F82516233C0071DED3 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		1337EBAD2515F80000E11CF5 /* AhoyTemperatureMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AhoyTemperatureMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1337EBB02515F80000E11CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1337EBB22515F80000E11CF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1337EBB42515F80000E11CF5 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1337EBB72515F80000E11CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1337EBB92515F80400E11CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1337EBBC2515F80400E11CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1337EBBE2515F80400E11CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1337EBC32515F80500E11CF5 /* AhoyTemperatureMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AhoyTemperatureMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1337EBC72515F80500E11CF5 /* AhoyTemperatureMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhoyTemperatureMeterTests.swift; sourceTree = "<group>"; };
+		1337EBC92515F80500E11CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1337EBCE2515F80500E11CF5 /* AhoyTemperatureMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AhoyTemperatureMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1337EBD22515F80500E11CF5 /* AhoyTemperatureMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhoyTemperatureMeterUITests.swift; sourceTree = "<group>"; };
+		1337EBD42515F80500E11CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13588F4C251634EE003260C0 /* ConfigUAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigUAT.xcconfig; sourceTree = "<group>"; };
+		13D888372516099900C44342 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		13D888382516099900C44342 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		13D888392516099900C44342 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		13D8883D251609FE00C44342 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		13D8884225160AC800C44342 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		13D8884425160AEE00C44342 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		13D8884625160BC300C44342 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		13D8884A25160BFB00C44342 /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
+		20CDE6452725A8E7A16DBEA5 /* Pods-AhoyTemperatureMeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhoyTemperatureMeter.release.xcconfig"; path = "Target Support Files/Pods-AhoyTemperatureMeter/Pods-AhoyTemperatureMeter.release.xcconfig"; sourceTree = "<group>"; };
+		29E74230EA9EAAA60FA3D6E4 /* Pods_AhoyTemperatureMeterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhoyTemperatureMeterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B181C993F6D7409D797BEA /* Pods-AhoyTemperatureMeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhoyTemperatureMeter.debug.xcconfig"; path = "Target Support Files/Pods-AhoyTemperatureMeter/Pods-AhoyTemperatureMeter.debug.xcconfig"; sourceTree = "<group>"; };
+		4A6D3BE42CD2DB23CCD5F96C /* Pods-AhoyTemperatureMeterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhoyTemperatureMeterTests.release.xcconfig"; path = "Target Support Files/Pods-AhoyTemperatureMeterTests/Pods-AhoyTemperatureMeterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6E0363922B057B80828667F /* Pods-AhoyTemperatureMeterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhoyTemperatureMeterTests.debug.xcconfig"; path = "Target Support Files/Pods-AhoyTemperatureMeterTests/Pods-AhoyTemperatureMeterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADAF83D9E79A6DD4AC5B3E22 /* Pods_AhoyTemperatureMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhoyTemperatureMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91AF64A37BD90F11F26D0CB /* Pods_AhoyTemperatureMeter_AhoyTemperatureMeterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhoyTemperatureMeter_AhoyTemperatureMeterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C273624FD25B579941B64743 /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.debug.xcconfig"; path = "Target Support Files/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D29CB91756C65D997F50F44F /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.release.xcconfig"; path = "Target Support Files/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1337EBAA2515F80000E11CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFEF048F5C37E568A6CBD6B /* Pods_AhoyTemperatureMeter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1337EBC02515F80500E11CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6229FCB40C25CB87185D84CF /* Pods_AhoyTemperatureMeterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1337EBCB2515F80500E11CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328A8B7D5BA8B590D165D583 /* Pods_AhoyTemperatureMeter_AhoyTemperatureMeterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		130F38F5251616520071DED3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				130F38F6251616650071DED3 /* Alert.swift */,
+				130F38F82516233C0071DED3 /* StringExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1337EBA42515F80000E11CF5 = {
+			isa = PBXGroup;
+			children = (
+				13D8883D251609FE00C44342 /* Debug.xcconfig */,
+				13588F4C251634EE003260C0 /* ConfigUAT.xcconfig */,
+				1337EBAF2515F80000E11CF5 /* AhoyTemperatureMeter */,
+				1337EBC62515F80500E11CF5 /* AhoyTemperatureMeterTests */,
+				1337EBD12515F80500E11CF5 /* AhoyTemperatureMeterUITests */,
+				1337EBAE2515F80000E11CF5 /* Products */,
+				2F1FA8C4E8F8B19001E8316B /* Pods */,
+				FDCB648760168F28AFF4E986 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1337EBAE2515F80000E11CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1337EBAD2515F80000E11CF5 /* AhoyTemperatureMeter.app */,
+				1337EBC32515F80500E11CF5 /* AhoyTemperatureMeterTests.xctest */,
+				1337EBCE2515F80500E11CF5 /* AhoyTemperatureMeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1337EBAF2515F80000E11CF5 /* AhoyTemperatureMeter */ = {
+			isa = PBXGroup;
+			children = (
+				130F38F5251616520071DED3 /* Helpers */,
+				1337EBBB2515F80400E11CF5 /* LaunchScreen.storyboard */,
+				1337EBB92515F80400E11CF5 /* Assets.xcassets */,
+				1337EBBE2515F80400E11CF5 /* Info.plist */,
+				1337EBB02515F80000E11CF5 /* AppDelegate.swift */,
+				1337EBB22515F80000E11CF5 /* SceneDelegate.swift */,
+				1337EBB62515F80000E11CF5 /* Main.storyboard */,
+				13D8884025160A9300C44342 /* Module */,
+				13D8883F25160A6D00C44342 /* Resources */,
+				13D888362516096E00C44342 /* Managers */,
+			);
+			path = AhoyTemperatureMeter;
+			sourceTree = "<group>";
+		};
+		1337EBC62515F80500E11CF5 /* AhoyTemperatureMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1337EBC72515F80500E11CF5 /* AhoyTemperatureMeterTests.swift */,
+				1337EBC92515F80500E11CF5 /* Info.plist */,
+			);
+			path = AhoyTemperatureMeterTests;
+			sourceTree = "<group>";
+		};
+		1337EBD12515F80500E11CF5 /* AhoyTemperatureMeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1337EBD22515F80500E11CF5 /* AhoyTemperatureMeterUITests.swift */,
+				1337EBD42515F80500E11CF5 /* Info.plist */,
+			);
+			path = AhoyTemperatureMeterUITests;
+			sourceTree = "<group>";
+		};
+		13D888362516096E00C44342 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				13D888382516099900C44342 /* Configuration.swift */,
+				13D888392516099900C44342 /* Requestable.swift */,
+				13D888372516099900C44342 /* ServiceManager.swift */,
+				130F38F3251610320071DED3 /* BeaconManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		13D8883E25160A6000C44342 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1337EBB42515F80000E11CF5 /* DashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		13D8883F25160A6D00C44342 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13D8884025160A9300C44342 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				13D8884125160A9A00C44342 /* Dashboard */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		13D8884125160A9A00C44342 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				13D8884825160BCD00C44342 /* Model */,
+				13D8883E25160A6000C44342 /* ViewControllers */,
+				13D8884225160AC800C44342 /* WeatherService.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		13D8884825160BCD00C44342 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13D8884625160BC300C44342 /* City.swift */,
+				13D8884425160AEE00C44342 /* Weather.swift */,
+				13D8884A25160BFB00C44342 /* WeatherInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F1FA8C4E8F8B19001E8316B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41B181C993F6D7409D797BEA /* Pods-AhoyTemperatureMeter.debug.xcconfig */,
+				20CDE6452725A8E7A16DBEA5 /* Pods-AhoyTemperatureMeter.release.xcconfig */,
+				C273624FD25B579941B64743 /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.debug.xcconfig */,
+				D29CB91756C65D997F50F44F /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.release.xcconfig */,
+				A6E0363922B057B80828667F /* Pods-AhoyTemperatureMeterTests.debug.xcconfig */,
+				4A6D3BE42CD2DB23CCD5F96C /* Pods-AhoyTemperatureMeterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDCB648760168F28AFF4E986 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADAF83D9E79A6DD4AC5B3E22 /* Pods_AhoyTemperatureMeter.framework */,
+				B91AF64A37BD90F11F26D0CB /* Pods_AhoyTemperatureMeter_AhoyTemperatureMeterUITests.framework */,
+				29E74230EA9EAAA60FA3D6E4 /* Pods_AhoyTemperatureMeterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1337EBAC2515F80000E11CF5 /* AhoyTemperatureMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1337EBD72515F80500E11CF5 /* Build configuration list for PBXNativeTarget "AhoyTemperatureMeter" */;
+			buildPhases = (
+				47AC83422D42A2CAA5D7A02E /* [CP] Check Pods Manifest.lock */,
+				1337EBA92515F80000E11CF5 /* Sources */,
+				1337EBAA2515F80000E11CF5 /* Frameworks */,
+				1337EBAB2515F80000E11CF5 /* Resources */,
+				26CAB0149914A0051D8ADA5E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AhoyTemperatureMeter;
+			productName = AhoyTemperatureMeter;
+			productReference = 1337EBAD2515F80000E11CF5 /* AhoyTemperatureMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1337EBC22515F80500E11CF5 /* AhoyTemperatureMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1337EBDA2515F80500E11CF5 /* Build configuration list for PBXNativeTarget "AhoyTemperatureMeterTests" */;
+			buildPhases = (
+				33F10971E2B891BB197642C9 /* [CP] Check Pods Manifest.lock */,
+				1337EBBF2515F80500E11CF5 /* Sources */,
+				1337EBC02515F80500E11CF5 /* Frameworks */,
+				1337EBC12515F80500E11CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1337EBC52515F80500E11CF5 /* PBXTargetDependency */,
+			);
+			name = AhoyTemperatureMeterTests;
+			productName = AhoyTemperatureMeterTests;
+			productReference = 1337EBC32515F80500E11CF5 /* AhoyTemperatureMeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1337EBCD2515F80500E11CF5 /* AhoyTemperatureMeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1337EBDD2515F80500E11CF5 /* Build configuration list for PBXNativeTarget "AhoyTemperatureMeterUITests" */;
+			buildPhases = (
+				4637631F4A17F8920BB94AA2 /* [CP] Check Pods Manifest.lock */,
+				1337EBCA2515F80500E11CF5 /* Sources */,
+				1337EBCB2515F80500E11CF5 /* Frameworks */,
+				1337EBCC2515F80500E11CF5 /* Resources */,
+				B565BE8BD5657B47DAA6917A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1337EBD02515F80500E11CF5 /* PBXTargetDependency */,
+			);
+			name = AhoyTemperatureMeterUITests;
+			productName = AhoyTemperatureMeterUITests;
+			productReference = 1337EBCE2515F80500E11CF5 /* AhoyTemperatureMeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1337EBA52515F80000E11CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = NewsApp;
+				TargetAttributes = {
+					1337EBAC2515F80000E11CF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					1337EBC22515F80500E11CF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1337EBAC2515F80000E11CF5;
+					};
+					1337EBCD2515F80500E11CF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1337EBAC2515F80000E11CF5;
+					};
+				};
+			};
+			buildConfigurationList = 1337EBA82515F80000E11CF5 /* Build configuration list for PBXProject "AhoyTemperatureMeter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1337EBA42515F80000E11CF5;
+			productRefGroup = 1337EBAE2515F80000E11CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1337EBAC2515F80000E11CF5 /* AhoyTemperatureMeter */,
+				1337EBC22515F80500E11CF5 /* AhoyTemperatureMeterTests */,
+				1337EBCD2515F80500E11CF5 /* AhoyTemperatureMeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1337EBAB2515F80000E11CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1337EBBD2515F80400E11CF5 /* LaunchScreen.storyboard in Resources */,
+				1337EBBA2515F80400E11CF5 /* Assets.xcassets in Resources */,
+				1337EBB82515F80000E11CF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1337EBC12515F80500E11CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1337EBCC2515F80500E11CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26CAB0149914A0051D8ADA5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AhoyTemperatureMeter/Pods-AhoyTemperatureMeter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AhoyTemperatureMeter/Pods-AhoyTemperatureMeter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AhoyTemperatureMeter/Pods-AhoyTemperatureMeter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33F10971E2B891BB197642C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AhoyTemperatureMeterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4637631F4A17F8920BB94AA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AC83422D42A2CAA5D7A02E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AhoyTemperatureMeter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B565BE8BD5657B47DAA6917A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests/Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1337EBA92515F80000E11CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D8884725160BC300C44342 /* City.swift in Sources */,
+				13D8884525160AEE00C44342 /* Weather.swift in Sources */,
+				13D88835251606E600C44342 /* DashboardViewController.swift in Sources */,
+				13D8883B2516099900C44342 /* Configuration.swift in Sources */,
+				1337EBB12515F80000E11CF5 /* AppDelegate.swift in Sources */,
+				13D8884B25160BFB00C44342 /* WeatherInformation.swift in Sources */,
+				130F38F7251616650071DED3 /* Alert.swift in Sources */,
+				13D8883C2516099900C44342 /* Requestable.swift in Sources */,
+				1337EBB32515F80000E11CF5 /* SceneDelegate.swift in Sources */,
+				13D8883A2516099900C44342 /* ServiceManager.swift in Sources */,
+				130F38F4251610320071DED3 /* BeaconManager.swift in Sources */,
+				130F38F92516233C0071DED3 /* StringExtension.swift in Sources */,
+				13D8884325160AC800C44342 /* WeatherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1337EBBF2515F80500E11CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1337EBC82515F80500E11CF5 /* AhoyTemperatureMeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1337EBCA2515F80500E11CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1337EBD32515F80500E11CF5 /* AhoyTemperatureMeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1337EBC52515F80500E11CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1337EBAC2515F80000E11CF5 /* AhoyTemperatureMeter */;
+			targetProxy = 1337EBC42515F80500E11CF5 /* PBXContainerItemProxy */;
+		};
+		1337EBD02515F80500E11CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1337EBAC2515F80000E11CF5 /* AhoyTemperatureMeter */;
+			targetProxy = 1337EBCF2515F80500E11CF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1337EBB62515F80000E11CF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1337EBB72515F80000E11CF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1337EBBB2515F80400E11CF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1337EBBC2515F80400E11CF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1337EBD52515F80500E11CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D8883D251609FE00C44342 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1337EBD62515F80500E11CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1337EBD82515F80500E11CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B181C993F6D7409D797BEA /* Pods-AhoyTemperatureMeter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahoy.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1337EBD92515F80500E11CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CDE6452725A8E7A16DBEA5 /* Pods-AhoyTemperatureMeter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahoy.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1337EBDB2515F80500E11CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E0363922B057B80828667F /* Pods-AhoyTemperatureMeterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewsApp.AhoyTemperatureMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AhoyTemperatureMeter.app/AhoyTemperatureMeter";
+			};
+			name = Debug;
+		};
+		1337EBDC2515F80500E11CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6D3BE42CD2DB23CCD5F96C /* Pods-AhoyTemperatureMeterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewsApp.AhoyTemperatureMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AhoyTemperatureMeter.app/AhoyTemperatureMeter";
+			};
+			name = Release;
+		};
+		1337EBDE2515F80500E11CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C273624FD25B579941B64743 /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewsApp.AhoyTemperatureMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AhoyTemperatureMeter;
+			};
+			name = Debug;
+		};
+		1337EBDF2515F80500E11CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29CB91756C65D997F50F44F /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewsApp.AhoyTemperatureMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AhoyTemperatureMeter;
+			};
+			name = Release;
+		};
+		13588F4D251634FB003260C0 /* Uat */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13588F4C251634EE003260C0 /* ConfigUAT.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Uat;
+		};
+		13588F4E251634FB003260C0 /* Uat */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B181C993F6D7409D797BEA /* Pods-AhoyTemperatureMeter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahoy.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Uat;
+		};
+		13588F4F251634FB003260C0 /* Uat */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E0363922B057B80828667F /* Pods-AhoyTemperatureMeterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewsApp.AhoyTemperatureMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AhoyTemperatureMeter.app/AhoyTemperatureMeter";
+			};
+			name = Uat;
+		};
+		13588F50251634FB003260C0 /* Uat */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C273624FD25B579941B64743 /* Pods-AhoyTemperatureMeter-AhoyTemperatureMeterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHNB78KN5B;
+				INFOPLIST_FILE = AhoyTemperatureMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NewsApp.AhoyTemperatureMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AhoyTemperatureMeter;
+			};
+			name = Uat;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1337EBA82515F80000E11CF5 /* Build configuration list for PBXProject "AhoyTemperatureMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1337EBD52515F80500E11CF5 /* Debug */,
+				13588F4D251634FB003260C0 /* Uat */,
+				1337EBD62515F80500E11CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1337EBD72515F80500E11CF5 /* Build configuration list for PBXNativeTarget "AhoyTemperatureMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1337EBD82515F80500E11CF5 /* Debug */,
+				13588F4E251634FB003260C0 /* Uat */,
+				1337EBD92515F80500E11CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1337EBDA2515F80500E11CF5 /* Build configuration list for PBXNativeTarget "AhoyTemperatureMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1337EBDB2515F80500E11CF5 /* Debug */,
+				13588F4F251634FB003260C0 /* Uat */,
+				1337EBDC2515F80500E11CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1337EBDD2515F80500E11CF5 /* Build configuration list for PBXNativeTarget "AhoyTemperatureMeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1337EBDE2515F80500E11CF5 /* Debug */,
+				13588F50251634FB003260C0 /* Uat */,
+				1337EBDF2515F80500E11CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1337EBA52515F80000E11CF5 /* Project object */;
+}

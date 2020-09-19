@@ -1,0 +1,6 @@
+framework module Pods_AhoyTemperatureMeterTests {
+  umbrella header "Pods-AhoyTemperatureMeterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
